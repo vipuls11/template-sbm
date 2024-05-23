@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SBM bank</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: "Open Sans", sans-serif;
+        }
+        .sbm_bank{
+            padding: 0 32px;
+        }
+        .sbm_bank_header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .sbm_bank_header p{
+            font-size: 32px;
+            font-weight: 600;
+        }
+
+        /* ........................Two-Grid................ */
+        .sbm_bank_Grid{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+        }
+
+        .sbm_bank_Grid h2{
+            font-size: 48px;
+            font-weight: 700;
+            width:350px;
+        }
+        .sbm_bank_Grid p{
+            width:400px;
+            font-size: 17px;
+        }
+        .sbm_bank_Grid button{
+            text-transform: uppercase;
+            color: white;
+            background-color: #2187C3;
+            border: none;
+            font-size: 17px;
+        }
+        /* .................sbm_bank_Three_Grid_Main............. */
+        .sbm_bank_Three_Grid_Main{
+            padding-top:15px;
+            padding: 0 32px;
+            background-color: #0c192a;
+        }
+        .sbm_bank_Three_Grid{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+            text-align: center;
+        }
+        .sbm_bank_item p{
+            color:white;
+        }
+        /* .....................latest_episode_main................. */
+          /*.latest_episode_content{
+            padding: 0px 15px;
+        }*/
+        .latest_episode_content h3{
+            font-size: 32px; 
+            color: #032F6F;
+            padding-bottom: 3px;
+            border-bottom: 2px solid green;
+        }
+        .latest_episode_show{
+            padding: 10px 0px;
+        }
+        .latest_episode_content h5{
+            color: #032F6F;
+            font-size: 14px;
+            font-weight: 600; 
+        }
+        .latest_episode_date{
+            color: #032F6F;
+            font-size: 14px;
+            font-weight: 600;
+            padding-top: 10px;
+        }
+        .latest_episode_main{
+            display: flex; 
+            padding: 0 90px;
+        }
+        .latest_episode_grid{
+            width:65%;
+             padding-top: 30px;
+             padding-left: 90px;
+             padding-right: 30px;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+        }
+
+        .latest_episodes_image{
+            text-align: center;
+             padding: 0 20px;
+        }
+        .latest_episodes_image_btn{
+            padding: 10px 20px;
+            font-weight: 600;
+            background-color: #ffa500;
+            border:none; 
+            color: #ffff; 
+            border-radius: 3px; 
+            margin-top: 10px;
+        }
+        .contact_form{
+            width:35%; 
+            padding: 30px 15px;
+        }
+        .contact_form_main_container{
+            padding: 20px; 
+            color: #032F6F; 
+            border-radius: 10px; 
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+            background-color: #CCEFF9;
+        }
+        .contact_form_bell{
+            display: flex;
+             align-items: center; 
+             gap:10px; color: #032F6F;
+        }
+        .contact_form_submit{
+            padding: 8px 20px; 
+            font-weight: 600; 
+            background-color: #33ae9a; 
+            border:none; 
+            color: #ffff; 
+            border-radius: 3px; 
+            margin-top: 10px;
+        }
+	
+.contact_form_input{
+  width: 100%; 
+  padding: 8px 5px; 
+  border-radius:8px; 
+  border:2px solid #032F6F;
+}
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+  .latest_episode_main{
+    display:block;
+       padding: 0 10px;
+  }  
+.latest_episode_grid{
+  width:100%;
+  padding-left: 30px;
+  display: grid;
+   grid-template-columns: repeat(1, 1fr);
+}
+ .contact_form{
+   width:90%;
+   margin:auto;
+ }
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px) {
+.latest_episode_main{
+    display:block;
+       /*padding: 0 10px;*/
+  } 
+  .latest_episode_grid{
+  width:100%;
+ padding-left: 60px;
+  /*display: grid;
+   grid-template-columns: repeat(1, 1fr);*/
+}
+  .contact_form{
+   width:60%;
+   margin:auto;
+ }
+}
+
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+    
+}
+    </style>
+</head>
+<body>
+    <section class="sbm_bank">
+        <div class="sbm_bank_header">
+            <div>
+                <img src="img/Group.png" alt="">
+            </div>
+            <div>
+               <p> For a Smarter Tomorrow</p>
+            </div>
+        </div>
+        <div class="sbm_bank_Grid">
+            <div></div>
+            <div>
+                <h2>Lorem ipsum dolor sit amet, consectetur</h2>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto voluptatibus, consequatur dolores a, Architecto voluptatibus, consequatur dolores a
+                </p>
+                <button>Lorem ipsum dolor sit amet</button>
+            </div>
+        </div>
+    </section>
+        <div class="sbm_bank_Three_Grid_Main">
+            <div class="sbm_bank_Three_Grid">
+                <div  class="sbm_bank_item">
+                    <img src="img/img-1.png" alt="">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio quasi fugit sapiente placeat voluptatibus iusto vitae ex debitis perferendis nobis quas tenetur numquam, repellat mollitia dolore voluptates voluptatum. Blanditiis, culpa!</p>
+                </div>
+                <div  class="sbm_bank_item">
+                    <img src="img" alt="">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio quasi fugit sapiente placeat voluptatibus iusto vitae ex debitis perferendis nobis quas tenetur numquam, repellat mollitia dolore voluptates voluptatum. Blanditiis, culpa!</p>
+                </div>
+                <div  class="sbm_bank_item">
+                    <img src="" alt="">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio quasi fugit sapiente placeat voluptatibus iusto vitae ex debitis perferendis nobis quas tenetur numquam, repellat mollitia dolore voluptates voluptatum. Blanditiis, culpa!</p>
+                </div>
+            </div>
+        </div>
+    
+    <div style="background-color: #e5f7fc;">
+        <div class="latest_episode_main">
+            <div class="latest_episode_grid">
+                <div class="latest_episodes_image">
+                    <img src="img/img-1.png" alt="image" style="background-color: black; width: 100%;">
+                    <button class="latest_episodes_image_btn" >PLAY EPISODE</button>
+                </div>
+                <div class="latest_episode_content">
+                    <h3>Latest Episode</h3>
+                    <div class="latest_episode_show">
+                    <h5>Episode 8:</h5>
+                    <h5>Hard Truths About Entrepreneursip</h5>
+                    <p class="latest_episode_date">15-05-2024</p>
+                    </div>
+                    
+                    <p style="color: #1db2e4; margin: 15px 0px;">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur dignissimos maiores quam, quos nam doloribus quas recusandae velit aliquid est mollitia quisquam, perspiciatis quae temporibus debitis tenetur eos dolores exercitationem.
+                    </p>
+                </div>
+            </div>
+            <div class="contact_form" >
+                <div class="contact_form_main_container" >
+                    <div class="contact_form_bell" >
+                        <span><img src="img/alarm.png" alt="" style="width:60px; height:60px;"></span><h5 color="#000" style="font-size: 16px;">Be the first to know when a new episode is out</h5>
+                    </div>
+                <div style="margin: 20px 0;">
+                    <!-- <div>
+                    <p>Our first season of the Smarter Tomorrow Podcast is dedicated to empowering individuals across Kenya with essential financial literacy knowledge. Our series covers a range of topics aimed at transforming your relationship with money, providing actionable insights, and helping you make informed financial decisions. Join us on this journey to financial empowerment and wealth creation.</p>
+                </div> -->
+                <form class="js-cm-form" id="subForm" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="30FEA77E7D0A9B8D7616376B90063231EC19CF45F00FCA81593B44340518ED683ABA96211D01AC058D01F436EAF394EBDB0D53CD69C2A018EC1F16BA2C17B418"><div>
+                    <div style="margin-bottom:20px;">
+                        <label style="font-weight: 600;">Name </label>
+                        <input class="contact_form_input" aria-label="Name" id="fieldName" maxlength="200" name="cm-name" placeholder="Your name" >
+                    </div>
+                    <div style="margin-bottom:20px;">
+                        <label style="font-weight: 600;">Email </label>
+                        <input class="contact_form_input"  autocomplete="Email" aria-label="Email"  id="fieldEmail" maxlength="200" name="cm-jyirhtl-jyirhtl" placeholder="Your email" required="" type="email" >
+                    </div>
+                <!-- <p><a href="https://www.sbmbank.co.ke/privacy-policy" rel="noopener" target="_blank">We  value your privacy</a></p> -->
+            </div >
+            <button class="contact_form_submit" type="submit">Subscribe</button>
+        </form>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
+</body>
+</html>
