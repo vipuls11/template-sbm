@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Cambridge', sans-serif;
+      }
+      .container {
+        max-width: 740px;
+        margin: 0 auto;
+      }
+      .header {
+        background-color: white;
+        padding: 2em 1em 1em 1em;
+      }
+      .header img {
+        vertical-align: middle;
+      }
+      .header p {
+        font-size: 24px;
+        font-weight: bold;
+        color: #1e3868;
+        display: inline-block;
+        margin-left: 10px;
+      }
+        #mobile{
+        display: none;
+      }
+      #desktop{
+        display:block
+      }
+      .banner {
+        background-image: url(https://www.sbmbank.co.ke/images/emailtemplates/MSC-Rent-1080x1080.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 700px;
+        position: relative;
+      }
+      .banner-text {
+        position: absolute;
+        width: 300px;
+        top: 10%;
+        left: 3%;
+      }
+      .banner-text h1 {
+        color: #1e3868;
+        font-weight: bold;
+        margin-bottom: 0.5em;
+      }
+      .banner-text p {
+        color: #1e3868;
+      }
+      .btn button {
+        background-color: #00b0e0;
+        color: white;
+        font-size: 14px;
+        font-weight: bold;
+        padding: 5px 10px;
+        border: none;
+        cursor: pointer;
+      }
+      .text-after-banner {
+        background-color: #1e3868;
+        padding: 2em 1em;
+        border-bottom: 10px solid #00b0e0;
+      }
+      .text-after-banner .text {
+        width: 500px;
+        margin: auto;
+      }
+      .text-after-banner .text h2 {
+        margin-bottom: 0.2em;
+        font-size: 36px;
+        color: white;
+        text-align: center;
+      }
+      .text-after-banner .text p {
+        color: white;
+        text-align: center;
+      }
+      .social-media-icons {
+        background-color: #ebf2d3;
+        padding: 2em 1em;
+      }
+      .social-media-icons .icon-container {
+        text-align: center;
+      }
+      .social-media-icons .icon-container img {
+        width: 35px;
+        height: auto;
+        margin: 0 5px;
+        cursor: pointer;
+      }
+      .social-media-icons-text p {
+        color: #1e3868;
+        text-align: center;
+      }
+      .social-media-icons-text div {
+        color: #00a38a;
+        text-align: center;
+      }
+      footer {
+        padding: 2em 1em;
+        text-align: center;
+      }
+      footer p a {
+        color: #00b0e0;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 1em;
+        display: inline-block;
+      }
+      footer span {
+        color: black;
+      }
+      footer .navy-blue a {
+        color: #1e3868;
+      }
+      footer .nav-blue-light-weight a {
+        color: #1e3868;
+        font-weight: 300;
+        font-size: 14px;
+      }
+      footer .nav-blue-light-weight .blue {
+        color: #00b0e0;
+      }
+      footer .small-text-footer {
+        font-size: 14px;
+        color: #1e3868;
+        margin-bottom: 1em;
+      }
+      footer .copyright {
+        color: #1e3868;
+        font-size: 16x;
+        font-weight: bold;
+      }
+      @media only screen and (max-width: 680px) {
+        .container {
+          max-width: 600px;
+        }
+        #banner.banner {
+          height: 300px !important;
+        }
+        .header tr td p {
+          font-size: 16px !important;
+        }
+        .text-after-banner .text {
+          width: 300px !important;
+        }
+        .header p {
+          font-size: 18px !important;
+          text-align: end !important;
+        }
+        .text-after-banner .text h2 {
+          font-size: 24px !important;
+        }
+        .text-after-banner .text p {
+          font-size: 16px !important;
+        }
+        .banner-text {
+          width: 240px !important;
+          margin-top: 0 !important;
+          top: 0% !important;
+          left: 0% !important;
+        }
+        .banner-text h1{
+font-size: 18px !important;
+}
+
+        .banner-text p{
+font-size: 14px !important;
+        }
+        .banner-btn.btn button {
+          font-size: 12px !important;
+         padding: 5px 5px !important;
+        }
+        .container table tr td img {
+          width: 125px !important;
+        }
+        .nav-blue-light-weight, .navy-blue {
+          margin-bottom: 1em !important;
+        }
+        footer p a {
+          margin-bottom: 0.5em !important;
+ font-size: 16px;
+        }
+         #desktop{
+            display: none;
+        }
+        #mobile{
+        display: block;
+      }
+      }
+
+      @media only screen and (max-width: 480px) {
+        .container {
+          max-width: 360px;
+        }
+        .header tr td p {
+          font-size: 12px !important;
+        } 
+
+        .text-after-banner .text h2 {
+          font-size: 24px;
+        }
+
+        .text-after-banner .text p {
+          font-size: 16px;
+        }
+         #desktop{
+          display: none;
+        }
+        #mobile{
+        display: block;
+      }
+      }
+     
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <table
+        class="header"
+        width="100%"
+        cellpadding="0"
+        cellspacing="0"
+        border="0"
+        style="background-color: #fff"
+      >
+        <tr>
+          <td>
+            <img src="./_Group_ (2).png" alt="" />
+          </td>
+          <td style="text-align: end">
+            <p><singleline>For a Smarter Tomorrow</singleline></p>
+          </td>
+        </tr>
+      </table>
+      <div id="banner" class="banner">
+        <div
+          class="banner-text"
+          style="width: 500px; text-align: left; padding: 20px; margin-top: 1em"
+        >
+          <h1
+            style="
+              font-size: 24px;
+              font-weight: bold;
+              color: #1e3868;
+              margin-bottom: 10px;
+            "
+          >
+            
+          </h1>
+          <p
+            style="font-size: 16px; font-weight: 400; color: #1e3868; margin: 0"
+          >
+            
+          </p>
+          <div class="banner-btn btn" style="margin-top: 10px">
+            <!--<button
+              style="
+                background-color: #00b0e0;
+                color: white;
+                font-size: 14px;
+                font-weight: bold;
+                padding: 5px 10px;
+                border: none;
+                cursor: pointer;
+              "
+            >
+              
+            </button>-->
+          </div>
+        </div>
+      </div>
+      <div class="text-after-banner">
+        <div class="text">
+          <h2><singleline></singleline></h2>
+          <p>
+            
+          </p>
+        </div>
+      </div>
+      <div class="social-media-icons">
+        <div class="icon-container">
+          <a href="#"><img src="./fb.png" alt="" style="cursor: pointer;" /></a>
+          <a href="#"><img src="./YT.png" alt="" style="cursor: pointer;" /></a>
+          <a href="#"><img src="./twitter.png" alt="" style="cursor: pointer;" /></a>
+          <a href="#"><img src="./linkedIn.png" alt="" style="cursor: pointer;" /></a>
+          <a href="#"><img src="./insta.png" alt="" style="cursor: pointer;" /> </a>
+        </div>
+        <div class="social-media-icons-text" style="text-align: center">
+          <p style="font-size: 16px; font-weight: 400; margin-top: 0.5em">
+            Follow us on Social Media
+          </p>
+          <div>@sbmbankkenya</div>
+        </div>
+      </div>
+      <footer style="background-color: #fff">
+        <p>
+          <a href="#"> About Us </a><span> | </span>
+          <a href="#">Privacy Policy</a> <span>|</span>
+          <a href="#">Update Preferences </a>
+        </p>
+        <p class="navy-blue">
+          <a href="#">Mauritius </a> <span>|</span> <a href="#"> India </a>
+          <span>| </span> <a href="#">Madagascar Kenya</a>
+        </p>
+        <p id="desktop" class="nav-blue-light-weight">
+          <strong class="blue">T:</strong>
+          <a href="tel:+254709800000">+254 (0) 709 800 000</a> /
+          <a href="tel:+254730175000">+254 (0) 730 175 000</a> |
+          <strong class="blue">W:</strong>
+          <a href="tel:+254773758196">+254 (0) 773 758 196</a> |
+          <strong class="blue">E:</strong>
+          <a href="mailto:atyourservice@sbmbank.co.ke"
+            >atyourservice@sbmbank.co.ke</a
+          >
+          |
+          <a href="http://www.sbmbank.co.ke" target="_blank"
+            >www.sbmbank.co.ke</a
+          >
+        </p>
+			<div id="mobile" class="nav-blue-light-weight">
+           <p>
+            <strong class="blue">T:</strong>
+            <a href="tel:+254709800000">+254 (0) 709 800 000</a>/
+            <a href="tel:+254730175000">+254 (0) 730 175 000</a>
+        </p>  
+        <p>
+            <strong class="blue">W:</strong>
+            <a href="tel:+254773758196">+254 (0) 773 758 196</a>
+        </p>
+           <p>
+            <strong class="blue">E:</strong>
+            <a href="mailto:atyourservice@sbmbank.co.ke"
+              >atyourservice@sbmbank.co.ke</a>
+           </p>
+       
+           <p>
+            <a href="http://www.sbmbank.co.ke" target="_blank"
+            >www.sbmbank.co.ke</a
+          >
+
+           </p>
+        </div>
+        <p class="small-text-footer" style="display: block">
+          SBM Bank (K) Ltd is licensed and regulated by the Central Bank of
+          Kenya
+        </p>
+        <p class="copyright" style="display: block">Copyright 2023</p>
+      </footer>
+    </div>
+  
+</html>

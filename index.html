@@ -146,6 +146,19 @@
   border-radius:8px; 
   border:2px solid #032F6F;
 }
+
+.Img_absolute_episode{
+    color: #ffff;
+  font-size: 14px;
+  font-weight: 600;
+  position:absolute;
+  bottom:0px;
+  padding: 14px 10px;
+  text-align:left;
+  left:0px;
+  background-image: linear-gradient(to bottom, transparent 0%, black 100%); 
+  width: 100%;
+}
 /* Media Query for low resolution  Tablets, Ipads */
 @media (min-width: 481px) and (max-width: 767px) {
   .latest_episode_main{
@@ -230,7 +243,13 @@
         <div class="latest_episode_main">
             <div class="latest_episode_grid">
                 <div class="latest_episodes_image">
-                    <img src="img/img-1.png" alt="image" style="background-color: black; width: 100%;">
+                    <div style="position:relative; border-radius: 8px;  ">
+                            <img src="img/EP8-min.png" alt="image" style="width: 100%; z-index: -40">
+                    <h5 class="Img_absolute_episode" >
+                        Episode 8:<br>
+                        Hard Truths About Entrepreneurship
+                    </h5>
+                </div>
                     <button class="latest_episodes_image_btn" >PLAY EPISODE</button>
                 </div>
                 <div class="latest_episode_content">
